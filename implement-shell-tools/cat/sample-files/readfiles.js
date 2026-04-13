@@ -7,5 +7,5 @@ files.forEach((file) => {
   const lines = content.split("\n")
   const numberedLines = lines
     .map((line, index) => `${index + 1} ${line}`);
-  console.log(numberedLines);
+  console.log(numberedLines.join("\n"));
 });
