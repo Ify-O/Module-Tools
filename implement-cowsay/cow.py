@@ -17,3 +17,7 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
+
+text = " ".join(args.message)
+
+getattr(cowsay, args.animal)(text)
